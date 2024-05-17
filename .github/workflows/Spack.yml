@@ -29,6 +29,7 @@ jobs:
       uses: NOAA-EMC/ci-test-spack-package@develop
       with:
         package-name: gfsio
+        package-variants: +pfunit
         custom-recipe: spack/package.py
         use-repo-cache: true
         spack-compiler: gcc
